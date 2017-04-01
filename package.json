@@ -23,6 +23,9 @@
     "funny"
   ],
   "license": "WTFPL",
+  "peerDependencies": {
+    "css-loader": "*"
+  },
   "devDependencies": {
     "babel-preset-vue-app": "^1.0.0",
     "css-loader": "^0.28.0",
