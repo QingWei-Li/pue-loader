@@ -1,7 +1,7 @@
 {
   "name": "pue-loader",
   "version": "0.0.0",
-  "description": "",
+  "description": "A more pythonic javascript for Vue component file.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js lib",

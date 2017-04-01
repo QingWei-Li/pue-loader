@@ -50,4 +50,4 @@ modules.export = {
 ```
 
 ## License
-MIT
+WTFPL
