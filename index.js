@@ -46,9 +46,10 @@ module.exports = function (source) {
   result.push('</' + lastSegment + '>')
   result = result.join('\n')
 
-  var fileName = path.basename(filePath, '.vue')
+  var extname = path.extname(filePath)
+  var fileName = path.basename(filePath, extname)
 
-  filePath = cache.save(fileName + '-' + genId(filePath), result)
+  filePath = cache.save(fileName + '-' + genId(filePath), result, extname)
 
   return 'module.exports = require(' +
     loaderUtils.stringifyRequest(this, '!!vue-loader!' + filePath) +

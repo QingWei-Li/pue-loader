@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.vue$/,
+        test: /\.(vue|pue)$/,
         loader: cwd('..')
       }
     ]
