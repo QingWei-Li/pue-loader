@@ -10,7 +10,7 @@
 
 ## Usage
 
-```html
+```coffee
 template
   div
     span {{ count }}
