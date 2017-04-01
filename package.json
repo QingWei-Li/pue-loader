@@ -1,0 +1,45 @@
+{
+  "name": "pue-loader",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js lib",
+    "example": "webpack-dev-server --config example/webpack.config.js --inline --hot --content-base example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QingWei-Li/pug-loader.git"
+  },
+  "keywords": [
+    "vue",
+    "pug",
+    "coffeescript",
+    "stylus",
+    "loader",
+    "funny"
+  ],
+  "license": "WTFPL",
+  "devDependencies": {
+    "babel-preset-vue-app": "^1.0.0",
+    "css-loader": "^0.28.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1",
+    "vue": "^2.2.6",
+    "vue-template-compiler": "^2.2.6",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "coffee-loader": "^0.7.3",
+    "coffee-script": "^1.12.4",
+    "loader-utils": "^1.1.0",
+    "pug": "^2.0.0-beta11",
+    "pug-loader": "^2.3.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "vue-loader": "^11.3.4"
+  }
+}
