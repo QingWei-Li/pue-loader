@@ -42,7 +42,7 @@ modules.export = {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'pug-loader'
+        loader: 'pue-loader'
       }
     ]
   }
