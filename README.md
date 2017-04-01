@@ -10,7 +10,7 @@
 
 ## Usage
 
-Create *app.vue* or *app.pue*
+Create `app.vue` or `app.pue`
 
 ```coffee
 template
