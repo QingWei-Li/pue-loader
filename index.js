@@ -52,7 +52,7 @@ module.exports = function (source) {
   var extname = path.extname(filePath)
   var fileName = path.basename(filePath, extname)
 
-  filePath = cache.save(fileName + '-' + genId(filePath), result, extname)
+  filePath = cache.save(fileName + '-' + genId(filePath), result)
 
   return 'module.exports = require(' +
     loaderUtils.stringifyRequest(this, '!!vue-loader!' + filePath) +

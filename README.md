@@ -10,7 +10,7 @@
 
 ## Usage
 
-Create `app.vue` or `app.pue`
+Create a `app.pue` file
 
 ```coffee
 template
@@ -43,7 +43,7 @@ modules.export = {
   module: {
     rules: [
       {
-        test: /\.pue$/, // or .vue
+        test: /\.pue$/,
         loader: 'pue-loader'
       }
     ]
