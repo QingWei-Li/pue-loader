@@ -10,7 +10,7 @@
 
 ## Usage
 
-```pug
+```html
 template
   div
     span {{ count }}
