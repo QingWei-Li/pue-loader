@@ -24,7 +24,8 @@
   ],
   "license": "WTFPL",
   "peerDependencies": {
-    "css-loader": "*"
+    "css-loader": "*",
+    "vue-loader": ">=10.0.0"
   },
   "devDependencies": {
     "babel-preset-vue-app": "^1.0.0",
@@ -45,7 +46,6 @@
     "pug": "^2.0.0-beta11",
     "pug-loader": "^2.3.0",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1",
-    "vue-loader": "^11.3.4"
+    "stylus-loader": "^3.0.1"
   }
 }

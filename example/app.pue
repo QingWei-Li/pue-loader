@@ -4,6 +4,10 @@ template
     button(@click="count++") +
     button(@click="count--") -
 
+    button
+
+block
+
 script
   export default {
     name: 'compo'

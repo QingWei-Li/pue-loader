@@ -30,15 +30,18 @@ module.exports = function (source) {
     if (/^\S/g.test(line)) {
       if (lastSegment) {
         result.push('</' + lastSegment + '>')
+        lastSegment = null
       }
 
-      lastSegment = TAG_MAP[line.trim()]
+      line = line.trim()
+      lastSegment = TAG_MAP[line]
+
       if (!lastSegment) {
-        console.error('[pue-loader] Unkown tag: ' + line)
-        return
+        result.push('<' + line + '>')
+        lastSegment = line
+      } else {
+        result.push('<' + lastSegment + ' ' + LANG_MAP[lastSegment] + '>')
       }
-
-      result.push('<' + lastSegment + ' ' + LANG_MAP[lastSegment] + '>')
     } else {
       result.push(line)
     }

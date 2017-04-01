@@ -33,7 +33,7 @@ style
 
 ## Installation
 ```shell
-npm i pue-loader css-loader -D
+npm i pue-loader css-loader vue-loader -D
 ```
 
 webpack config
@@ -43,7 +43,7 @@ modules.export = {
   module: {
     rules: [
       {
-        test: /\.vue$/, // or pue
+        test: /\.pue$/, // or .vue
         loader: 'pue-loader'
       }
     ]
