@@ -1,6 +1,6 @@
 {
   "name": "pue-loader",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A more pythonic javascript for Vue component file.",
   "main": "index.js",
   "scripts": {
