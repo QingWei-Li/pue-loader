@@ -7,6 +7,9 @@
     "test": "eslint index.js lib",
     "example": "webpack-dev-server --config example/webpack.config.js --inline --hot --content-base example"
   },
+  "files": [
+    "lib"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/QingWei-Li/pug-loader.git"
