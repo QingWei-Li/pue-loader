@@ -51,5 +51,9 @@ modules.export = {
 }
 ```
 
+## Syntax highlight
+
+- Sublime Text - https://github.com/QingWei-Li/pue-syntax-highlight
+
 ## License
 WTFPL
