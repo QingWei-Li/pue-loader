@@ -26,7 +26,7 @@ script
       count: 0
   }
 
-style
+style(scoped="scoped")
   span
     color red
 ```
