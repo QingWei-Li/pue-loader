@@ -33,14 +33,17 @@ module.exports = function (source) {
         lastSegment = null
       }
 
-      line = line.trim()
+      const m = line.match(/(\w+)(\(([\S\s]+)\))?/)
+      const attrs = m[3] ? m[3].replace(/,/g, ' ') : ''
+
+      line = m[1]
       lastSegment = TAG_MAP[line]
 
       if (!lastSegment) {
-        result.push('<' + line + '>')
+        result.push('<' + line + ' ' + attrs + '>')
         lastSegment = line
       } else {
-        result.push('<' + lastSegment + ' ' + LANG_MAP[lastSegment] + '>')
+        result.push('<' + lastSegment + ' ' + LANG_MAP[lastSegment] + ' ' + attrs + '>')
       }
     } else {
       result.push(line)
